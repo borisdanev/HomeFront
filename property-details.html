@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/animations.css" />
+    <link rel="stylesheet" href="style/responsive.css" />
+    <script type="module" src="scripts/propertyDetails.js"></script>
+    <title>Property Details</title>
+  </head>
+  <body>
+    <section
+      class="nav-bar position-fixed top-0 start-0 end-0 text-white px-0 py-3 p-md-3 fw-bolder nav-scrolled"
+    >
+      <div class="container-md">
+        <div class="row">
+          <a
+            href="index.html"
+            class="col-4 text-decoration-none h3 fw-bold text-primary"
+          >
+            HomeFront
+          </a>
+          <div class="col-4">
+            <ul
+              class="navbar-nav d-none d-lg-flex flex-row justify-content-between"
+            >
+              <li class="nav-item h4">
+                <a
+                  href="properties.html?purpose=sale#properties"
+                  class="nav-link"
+                  >For Sale
+                </a>
+              </li>
+              <li class="nav-item h4">
+                <a
+                  href="properties.html?purose=rent#properties"
+                  class="nav-link"
+                  >For Rent</a
+                >
+              </li>
+              <li class="nav-item h4">
+                <a href="#about-us" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item h4">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4 d-flex justify-content-end position-relative">
+            <div class="d-none d-lg-block">
+              <button class="login-btn btn btn-light me-2">Login in</button>
+              <button class="register-btn btn btn-primary">Register</button>
+              <div
+                class="user-wrapper rounded-circle bg-white text-dark d-none justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-user fa-lg"></i>
+              </div>
+            </div>
+            <div
+              class="user-info d-none bg-white p-2 position-absolute text-secondary"
+            >
+              <div class="border-bottom mb-3">
+                <p class="name mb-1">Name Surnam</p>
+                <p class="email mb-1">email@mail.com</p>
+              </div>
+              <p class="sign-out mb-0">Sign out</p>
+            </div>
+            <div
+              class="side-container side-bar-closed position-fixed end-0 top-0 bottom-0 d-flex flex-column align-items-center text-white py-2"
+            >
+              <div class="burger d-block d-lg-none mb-3">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div
+                class="side-bar mt-5 d-flex flex-column justify-content-between align-items-center h-100 mb-4"
+              >
+                <div>
+                  <p class="h4">For Sell</p>
+                  <p class="h4">For Rent</p>
+                  <p class="h4">About Us</p>
+                  <p class="h4">Contact</p>
+                </div>
+                <div class="w-75 mb-4">
+                  <div class="panel mt-3">
+                    <div class="panel-header d-flex justify-content-between">
+                      <div>
+                        <i class="fa-solid fa-circle-info text-primary"></i>
+                        <span class="h4 ms-2">About</span>
+                      </div>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="ps-3 panel-content">
+                      <p>Privacy & Policy</p>
+                      <p>About Us</p>
+                      <p>Property Awards</p>
+                      <p>Features</p>
+                    </div>
+                  </div>
+                  <div class="panel my-3">
+                    <div class="panel-header d-flex justify-content-between">
+                      <div>
+                        <i class="fa-solid fa-headset text-primary"></i>
+                        <span class="h4 ms-2">Service</span>
+                      </div>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="ps-3 panel-content">
+                      <p>How it works?</p>
+                      <p>Security</p>
+                      <p>Contact Us</p>
+                    </div>
+                  </div>
+                  <div class="panel mb-4">
+                    <div class="panel-header d-flex justify-content-between">
+                      <div>
+                        <i class="fa-solid fa-comments text-primary"></i>
+                        <span class="h4 ms-2">Support</span>
+                      </div>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="ps-3 panel-content">
+                      <p>FAQ</p>
+                      <p>Contact Us</p>
+                      <p>Support Center</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button class="d-block btn btn-light mt-4 mb-3 bg-white">
+                    Login in
+                  </button>
+                  <button class="register-btn btn btn-primary">Register</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-content p-1 p-md-5 mt-5"></section>
+    <section class="property-info p-1 p-md-5"></section>
+    <section class="property-description py-5"></section>
+    <section class="property-amenities p-1 p-md-5"></section>
+    <footer class="footer p-md-5 pb-3 bg-light mt-5">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-6">
+            <div class="text-center text-lg-start">
+              <div class="text-decoration-none h4 fw-bold text-primary">
+                HomeFront
+              </div>
+              <p class="h5">Home is the nicest word there is</p>
+            </div>
+            <div class="social-media h5 mt-3 text-sm-center text-lg-start">
+              <span><i class="fa-brands me-2 fa-twitter"></i></span>
+              <span><i class="fa-brands me-2 fa-linkedin"></i></span>
+              <span><i class="fa-brands me-2 fa-instagram"></i></span>
+              <span><i class="fa-brands me-2 fa-facebook"></i></span>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="ps-sm-4 ps-lg-0 row gx-5">
+              <div class="col-sm-3">
+                <p class="text slide-from-down">About</p>
+                <p>Privacy & Policy</p>
+                <p>About Us</p>
+                <p>Property Awards</p>
+                <p>Features</p>
+              </div>
+              <div class="col-sm-4">
+                <p class="text">Customer Service</p>
+                <p>How it works?</p>
+                <p>Security</p>
+                <p>Contact Us</p>
+              </div>
+              <div class="col-sm-3">
+                <p class="text">Support</p>
+                <p>FAQ</p>
+                <p>Contact Us</p>
+                <p>Support Center</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

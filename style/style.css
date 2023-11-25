@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Montserrat:wght@500&family=Roboto:wght@500&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+.h5 {
+  font-size: clamp(1rem, 2vw, 1.1rem) !important;
+}
+.h4 {
+  font-size: clamp(1.1rem, 2vw, 1.25rem) !important;
+}
+.h3 {
+  font-size: clamp(1.18rem, 2vw, 1.5rem);
+}
+.h2 {
+  font-size: clamp(1.3rem, 2vw, 1.62rem) !important;
+}
+p {
+  font-size: clamp(0.87rem, 2vw, 1rem);
+}
+.cover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.logged-in .register-btn,
+.logged-in .login-btn {
+  display: none !important;
+}
+.form-opened .register-form,
+.form-opened .overlay {
+  display: block !important;
+}
+.form-opened .nav-bar {
+  position: relative !important;
+  color: rgb(33, 37, 41) !important;
+}
+.start .input,
+.start button {
+  transition: all 1.5s ease;
+}
+.start .input > * {
+  transition: all 2s ease;
+}
+.search-bar {
+  width: 900px;
+  max-width: 10000px;
+  transition: all 1.5s ease;
+}
+.logged-in .user-wrapper {
+  display: flex !important;
+}
+.form-control {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.form-control:focus {
+  background-color: #eeeeee !important;
+}
+button {
+  border: none;
+}
+.form-control {
+  border: none !important;
+}
+.nav-bar {
+  z-index: 99;
+  transition: all 0.15s ease;
+}
+.side-container {
+  width: clamp(10rem, 20vw, 15rem);
+  z-index: 90;
+  background-color: #212529;
+  box-shadow: 0 0 1000px 10000000px rgba(0, 0, 0, 0.6);
+}
+.side-bar {
+  transform: translateX(0);
+  transition: opacity 0.15s, background-color 0.15s, transform 0.25s ease;
+  width: 100%;
+}
+.side-bar .panel {
+  overflow: hidden;
+}
+.panel .panel-content p {
+  margin: 0;
+}
+.panel .panel-content {
+  transition: max-height 0.2s ease-in-out;
+  max-height: 0;
+}
+.panel i {
+  transition: all 0.2s ease-in-out;
+}
+.panel .panel-header.active .fa-chevron-down {
+  transform: rotate(-180deg);
+}
+.side-bar-closed {
+  background-color: transparent;
+  bottom: 100vh !important;
+  box-shadow: 0 0 0 0;
+}
+.side-bar-closed .side-bar {
+  transform: translateX(100%);
+  opacity: 0;
+}
+.nav-bar .user-wrapper {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.nav-bar .user-info {
+  right: -3%;
+  top: 120%;
+}
+.nav-scrolled {
+  background-color: white;
+  color: black !important;
+  transition: all 0.15s ease;
+}
+.nav-scrolled .user-wrapper {
+  background-color: black !important;
+  color: white !important;
+}
+.nav-scrolled .login-btn {
+  background-color: #212529 !important;
+  color: white !important;
+}
+.start .background-img {
+  height: 40rem;
+}
+.start .img-wrapper {
+  width: 31rem;
+  top: 13%;
+  right: 15%;
+  height: 40rem;
+  border-radius: 14rem 14rem 1rem 1rem;
+  box-shadow: 0 0 40px #d0d0d0;
+}
+.start .img-wrapper img {
+  border-radius: 14rem 14rem 1rem 1rem;
+  height: 100%;
+  width: 100%;
+}
+.start .content {
+  top: 25%;
+  left: 6%;
+  z-index: 50;
+}
+.start .content h1 {
+  width: 40rem;
+  transition: opacity 1s ease, filter 1.5s ease;
+}
+.start form {
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+}
+.start form i {
+  top: 24%;
+  left: 0.8rem;
+}
+.start form i,
+.start form img {
+  font-size: 1.3rem;
+  width: 1.3rem;
+}
+.start .active {
+  background-color: #0d6efd !important;
+  color: white;
+  transition: all 0.25s;
+}
+.start .purpose-selector {
+  cursor: pointer;
+}
+.start .purpose-selector-container {
+  transition: all 0.7s;
+}
+.start .input,
+.start input {
+  background-color: #eeeeee;
+  height: 3rem;
+  outline: none;
+}
+.start .selector {
+  bottom: -11rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  width: 550px;
+}
+.start .location-selector-container {
+  bottom: -15rem;
+}
+.start .item {
+  cursor: pointer;
+}
+.location-selector-container .item,
+.category-selector .item {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+.start .price-selector {
+  left: 30%;
+}
+.start .area-selector {
+  left: 40%;
+}
+.start .category-selector {
+  left: 50%;
+  bottom: -12.5rem;
+}
+.start .price,
+.start .area {
+  background-color: #eeeeee;
+}
+.start .selected {
+  background-color: #eeeeee;
+}
+.start .price input,
+.start .area input {
+  outline: none;
+  border: none;
+}
+.start .price input {
+  width: 4rem;
+}
+.start .area input {
+  width: 3.5rem;
+}
+.about-us .col-md-4,
+.about-us .btn {
+  transition: all 1s;
+}
+.properties .title {
+  font-size: 1.15rem !important;
+}
+.properties .h2 {
+  font-size: clamp(1.5rem, 2.5vw, 1.85rem) !important;
+}
+.properties .filters img,
+.properties .filters i {
+  width: 1rem;
+  font-size: 1rem !important;
+}
+.properties .position-relative {
+  overflow: hidden;
+}
+.properties .col-md-6:hover .img-fluid {
+  transform: scale(1.15);
+  transition: all 0.5s ease;
+}
+.properties .filters .category {
+  color: rgb(133, 133, 133);
+  transition: transform 0.25s, opacity 0.15s ease;
+}
+.properties .categories > :nth-child(2) {
+  transition-delay: 0.15s;
+}
+.properties .categories > :nth-child(3) {
+  transition-delay: 0.3s;
+}
+.properties .categories > :nth-child(4) {
+  transition-delay: 0.45s;
+}
+.properties .filters .active {
+  background-color: #e8e8e8;
+  border-color: #e8e8e8 !important;
+  color: black;
+}
+.properties form select {
+  outline: none;
+  border-radius: 10px !important;
+}
+.properties .icons img {
+  width: 1rem;
+}
+.properties .icons span {
+  color: rgb(89, 89, 89);
+}
+.properties .position-relative img {
+  height: 200px;
+}
+.properties .position-relative .btn {
+  bottom: 1rem;
+  left: 1rem;
+}
+.properties .position-relative p {
+  top: 1rem;
+  left: 1rem;
+}
+.properties .more-btn {
+  background-color: rgb(228, 228, 228);
+  transition: all 0.25s;
+}
+.properties .more-btn:hover {
+  background-color: white;
+  border-color: rgb(220, 220, 220);
+}
+.register-form {
+  top: 7rem;
+  left: 6rem;
+  right: 6rem;
+  z-index: 98;
+  border-radius: 1rem;
+  height: 567px;
+}
+.register-form img {
+  border-radius: 1rem;
+  height: 550px;
+}
+.register-form input {
+  border: none;
+  border-bottom: 1px solid rgb(218, 218, 218);
+  outline: none;
+  width: 20rem;
+}
+.register-form .have-account {
+  color: rgb(207, 207, 207);
+}
+::placeholder {
+  color: rgb(207, 207, 207);
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 95;
+}
+.get-started img {
+  border-radius: 15rem 15rem 1rem 1rem;
+  height: 580px;
+  width: 100%;
+  object-fit: cover;
+}
+.get-started .col-lg-6 {
+  transition: all 0.5s ease;
+}
+.get-started .img-wrapper {
+  width: 80%;
+  border-radius: 15rem 15rem 1rem 1rem;
+}
+.get-started .btn {
+  width: 8rem;
+}
+.testimonial {
+  background-color: rgba(230, 230, 230);
+}
+.testimonial .slide {
+  height: 340px;
+}
+.testimonial .slide .row {
+  height: 100%;
+}
+.testimonial img {
+  height: 100%;
+  object-fit: cover;
+}
+.testimonial .quote {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+.testimonial .prev-arrow,
+.testimonial .next-arrow {
+  top: 60%;
+  background-color: white;
+}
+.testimonial .prev-arrow {
+  left: -1.5rem;
+}
+.testimonial .next-arrow {
+  right: -1.5rem;
+}
+.contact .rounded {
+  background-color: rgb(237, 237, 237);
+  transition: opacity 0.5s ease, transform 1s ease;
+}
+.contact .row > :nth-child(2) {
+  transition-delay: 200ms;
+}
+.contact .row > :nth-child(3) {
+  transition-delay: 400ms;
+}
+.contact .row > :nth-child(4) {
+  transition-delay: 600ms;
+}
+.contact .rounded button {
+  width: 2.5rem;
+}
+.contact .main-img {
+  height: 28rem;
+  object-fit: cover;
+}
+.contact img {
+  object-fit: cover;
+}
+.footer .text {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+.footer p {
+  transition: all 0.25s;
+}
+.main-content .title {
+  font-size: clamp(1.37rem, 2.5vw, 1.75rem) !important;
+}
+.property-description .content-manager,
+.property-amenities .content-manager {
+  max-height: 150px;
+  overflow: hidden;
+  transition: all 0.7s cubic-bezier(0, 1, 0, 1);
+}
+.property-description .expanded-content,
+.property-amenities .expanded-content {
+  max-height: 1000px;
+  transition: all 1s ease-in-out;
+}
+.property-description ul {
+  list-style-type: none;
+  padding: 0;
+}
+#map {
+  height: 240px;
+  z-index: -1;
+}
+.property-description .container,
+.property-amenities .container {
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+.property-description .btn,
+.property-amenities .btn {
+  background-color: rgb(230, 230, 230);
+}
+.property-description button:first-child,
+.property-amenities button:first-child {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+.skeleton {
+  background: linear-gradient(to right, #e5e5e5 0%, #f9f9f9 50%, #e5e5e5 100%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s linear infinite;
+}
+.skeleton-img {
+  height: 12.5rem;
+}
+.skeleton-title {
+  height: 1.56rem;
+}
+.skeleton-property {
+  height: 1rem;
+  width: 33.33333%;
+  margin-top: 0.7rem;
+  margin-right: 0.5rem;
+}
+.skeleton-price {
+  height: 1rem;
+  width: 60%;
+  margin-top: 0.7rem;
+}
+.skeleton-cover {
+  height: 31rem;
+}
+.skeleton-contact {
+  height: 6rem;
+}
+.skeleton-map {
+  height: 17rem;
+}
+@keyframes skeleton-loading {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+.burger {
+  width: clamp(2.1rem, 5vw, 2.5rem) !important;
+  height: clamp(0.18rem, 0.5vw, 0.31rem) !important;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #0d6efd;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+.burger span:nth-child(1) {
+  top: 10px;
+}
+
+.burger span:nth-child(2),
+.burger span:nth-child(3) {
+  top: 20px;
+}
+
+.burger span:nth-child(4) {
+  top: 30px;
+}
+
+.burger.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.burger.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.burger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.burger.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
