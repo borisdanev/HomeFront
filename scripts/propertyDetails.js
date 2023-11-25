@@ -1,6 +1,6 @@
 import { fetchData } from './fetchData.js';
 import { getMarkup } from './markups.js';
-import * as L from '../node_modules/leaflet/dist/leaflet-src.esm.js';
+import L from 'leaflet';
 import { loadSkeleton } from './skeletonLoader.js';
 const mainContent = document.querySelector('.main-content');
 const propertyInfo = document.querySelector('.property-info');

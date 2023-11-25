@@ -1,5 +1,6 @@
-import '../../node_modules/jquery/dist/jquery.min.js';
-import '../../node_modules/slick-carousel/slick/slick.min.js';
+import $ from 'jquery';
+import 'slick-carousel';
+
 const renderSlider = () => {
   $('.testimonial-slider').slick({
     slidesToShow: 1,
