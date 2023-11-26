@@ -1,4 +1,6 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'leaflet/dist/leaflet.css';
+@import 'slick-carousel/slick/slick.css';
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Montserrat:wght@500&family=Roboto:wght@500&display=swap');
 body {
   font-family: 'Roboto', sans-serif !important;

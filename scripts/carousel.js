@@ -1,6 +1,5 @@
 import $ from 'jquery';
 import 'slick-carousel';
-
 const renderSlider = () => {
   $('.testimonial-slider').slick({
     slidesToShow: 1,
