@@ -50,7 +50,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution:
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(map);
-L.marker([51.5, -0.09]).addTo(map).openPopup();
 const mainContentMarkup = getMarkup('mainContentMarkup', property);
 const propertyInfoMarkup = getMarkup('propertyInfoMarkup', property);
 const propertyDescMarkup = getMarkup('descriptionMarkup', property);

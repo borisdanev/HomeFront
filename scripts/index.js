@@ -34,7 +34,7 @@ const getFilters = async () => {
 };
 renderSlider();
 testimonialSlides.forEach((slide, i) => {
-  slide.querySelector('img').src = `optimised_images/client_${i + 1}.jpg`;
+  slide.querySelector('img').src = `images/client_${i + 1}.jpg`;
 });
 searchBar.addEventListener('submit', e => {
   e.preventDefault();

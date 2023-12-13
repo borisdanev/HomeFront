@@ -122,7 +122,6 @@ const searchSubmit = () => {
     .innerText.toLowerCase();
   let min = priceSelector.querySelector('input[data-range="min"]');
   let max = priceSelector.querySelector('input[data-range="max"]');
-  console.log(min);
   const [minPrice, maxPrice] = submitFilter(min, max, 'price');
   min = areaSelector.querySelector('input[data-range="min"]');
   max = areaSelector.querySelector('input[data-range="max"]');
