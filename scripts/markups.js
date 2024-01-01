@@ -43,7 +43,7 @@ const getMarkup = (name, property) => {
                         <div class="col-12">
                             <img class="cover-photo img-fluid" src="${
                               property.coverPhoto.url
-                            }"/>
+                            }" alt="Cover"/>
                         </div>
                         <div class="col-12">
                             <div class="row">
@@ -52,7 +52,7 @@ const getMarkup = (name, property) => {
                                  .map(
                                    photo => `
                                 <div class="col-2 px-1">
-                                    <img class="img-fluid" src="${photo.url}"/>
+                                    <img class="img-fluid" src="${photo.url}" alt="Property room"/>
                                 </div>
                                 `
                                  )
@@ -77,13 +77,13 @@ const getMarkup = (name, property) => {
                     </p>
                     <div>
                         <span class="me-3">
-                            <img src="images/bed.png" style="width:1rem;height:1rem" />
+                            <img src="images/bed.png" style="width:1rem;height:1rem" alt="Bed"/>
                             <span>
                                 ${property.rooms} Beds
                             </span>
                         </span>
                         <span>
-                            <img src="images/bathtub.png" style="width:1rem;height:1rem" />
+                            <img src="images/bathtub.png" style="width:1rem;height:1rem" alt="Baththub"/>
                             <span>
                                 ${property.baths} Baths
                             </span>

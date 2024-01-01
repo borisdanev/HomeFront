@@ -9,7 +9,9 @@ const getProperty = property => {
       property.id
     } style="cursor:pointer">
     <div class="position-relative">
-      <img class="img-fluid w-100" src='${property.coverPhoto.url}'/>
+      <img class="img-fluid w-100" src='${
+        property.coverPhoto.url
+      }' alt="Real estate property"/>
       <p class="position-absolute text-white">${property.location[0].name}, ${
     property.location[1].name
   }</p>
@@ -17,22 +19,22 @@ const getProperty = property => {
         property.category[1].nameSingular
       }</button>
       </div>
-      <h6 class="title h6 mt-3">${title.slice(0, 2).join(' ')}</h6>
+      <p class="title h6 mt-3">${title.slice(0, 2).join(' ')}</p>
       <div class="d-flex icons">
       <div class="me-2 me-md-3">
         <span>
-        <img src="images/bed.png"/>
+        <img src="images/bed.png" alt="Bed"/>
         </span>
         <span>${property.rooms ? property.rooms : 1} room</span>
           </div>
           <div class="me-2 me-md-3">
           <span>
-        <img src="images/bathtub.png"/>
+        <img src="images/bathtub.png" alt="Bathtub"/>
         </span>
         <span >${property.baths} room</span></div>
           <div class="me-2 me-md-3">
           <span>
-        <img src="images/scale.png">
+        <img src="images/scale.png" alt="Area">
         </span>
         <span>${Math.trunc(property.area)} m²</span></div>
         </div>
